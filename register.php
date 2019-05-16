@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+
+<?php
+
+if(isset($_POST['loginButton'])) {
+    //Login button was pressed
+}
+
+if(isset($_POST['registerButton'])) {
+    //Register button was pressed
+    
+}
+
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
