@@ -72,7 +72,6 @@
                 <input id="email2" name="email2" type="text" placeholder="e.g. bart@gmail.com" value="<?php getInputValue("email2") ?>" required>
             </p>
 
-
             <p>
                 <?php echo $account->getError(Constants::$passwordsDoNotMatch); ?>
                 <?php echo $account->getError(Constants::$passwordNotAlphaNumeric); ?>
