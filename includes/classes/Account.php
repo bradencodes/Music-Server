@@ -18,7 +18,7 @@
 
             if(empty($this->errorArray)) {
                 // Insert into DB
-                return insertUserDetails($un, $fn, $ln, $em, $pw);
+                return $this->insertUserDetails($un, $fn, $ln, $em, $pw);
             }
             else {
                 return false;
