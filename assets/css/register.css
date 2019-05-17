@@ -91,3 +91,12 @@ html, body {
     mix-blend-mode: screen;
     transition: 200ms;
 }
+
+.hasAccountText {
+    text-align: center;
+}
+
+.hasAccountText span {
+    font-weight: bold;
+    font-size: 12px;
+}
