@@ -29,6 +29,18 @@ html, body {
     max-width: 1024px;
 }
 
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #fff; 
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #fff; 
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #fff; 
+}
+
 #inputContainer {
     width: 400px;
     padding: 45px;
@@ -50,4 +62,10 @@ html, body {
     height: 27px;
     line-height: 27px;
     width: 100%;
+}
+
+#inputContainer label {
+    color: #a0a0a0;
+    font-size: 13px;
+    margin-top: 15px;
 }
