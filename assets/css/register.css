@@ -69,3 +69,25 @@ html, body {
     font-size: 13px;
     margin-top: 15px;
 }
+
+#inputContainer button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 250px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    height: 41px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0ms;
+}
+
+#inputContainer button:hover {
+    background-color: #fff;
+    color: #000;
+    mix-blend-mode: screen;
+    transition: 200ms;
+}

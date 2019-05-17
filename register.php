@@ -43,7 +43,7 @@
                         <input id="loginPassword" name="loginPassword" type="password" required>
                     </p>
 
-                    <button type="submit" name="loginButton">Log In</button>
+                    <button type="submit" name="loginButton">LOG IN</button>
                 </form>
 
 
@@ -94,12 +94,12 @@
                         <input id="password2" name="password2" type="password" required>
                     </p>
 
-                    <button type="submit" name="registerButton">Sign Up</button>
+                    <button type="submit" name="registerButton">SIGN UP</button>
                 </form>
             </div>
 
         </div>
-        
+
     </div>
 </body>
 </html>
