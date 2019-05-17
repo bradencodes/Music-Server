@@ -24,6 +24,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to Slotify!</title>
     <link rel="stylesheet" type="text/css" href="assets/css/register.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/register.js"></script>
 </head>
 <body>
     <div id="background">
