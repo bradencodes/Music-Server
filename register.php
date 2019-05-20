@@ -135,6 +135,16 @@
                 </form>
             </div>
 
+            <div id="loginText">
+                <h1>Stream all of your music in one place</h1>
+                <h2>Listen to your music for free</h2>
+                <ul>
+                    <li>Rate your music</li>
+                    <li>Create your own playlists with smart rules</li>
+                    <li>Access your music anywhere</li>
+                </ul>
+            </div>
+
         </div>
 
     </div>
