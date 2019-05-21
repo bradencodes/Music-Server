@@ -100,6 +100,21 @@ else {
             </div>
 
             <div id="nowPlayingRight">
+
+                <div class="volumeBar">
+
+                    <button class="controlButton volume" title="volume">
+                        <img src="assets/images/icons/volume.png" alt="volume">
+                    </button>
+
+                    <div class="progressBar">
+                        <div class="progressBarBg">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
