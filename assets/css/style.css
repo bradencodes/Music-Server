@@ -189,6 +189,10 @@ html, body {
     text-decoration: none;
 }
 
+.navItemLink:hover {
+    color: #fff;
+}
+
 .navItemLink .icon {
     position: absolute;
     right: 0;
