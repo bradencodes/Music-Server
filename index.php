@@ -26,7 +26,19 @@ else {
 
     <div id="mainContainer">
 
-        <div class="topContainer"></div>
+        <div class="topContainer">
+
+            <div id="navBarContainer">
+                <nav class="navBar">
+
+                    <a href="index.php" class="logo">
+                        <img src="assets/images/icons/logo.png" alt="logo">
+                    </a>
+
+                </nav>
+            </div>
+
+        </div>
 
         <div id="nowPlayingBarContainer">
             <div id="nowPlayingBar">
