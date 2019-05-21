@@ -29,9 +29,23 @@ else {
 
             <div id="nowPlayingLeft">
                 <div class="content">
+
                     <span class="albumLink">
                         <img class="albumArtwork" src="https://s.mxmcdn.net/site/images/album-placeholder.png" alt="album">
                     </span>
+
+                    <div class="trackInfo">
+
+                        <span class="trackName">
+                            <span>Happy Birthday</span>
+                        </span>
+
+                        <span class="artistName">
+                            <span>Braden Walker</span>
+                        </span>
+
+                    </div>
+
                 </div>
             </div>
 
