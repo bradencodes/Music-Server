@@ -28,6 +28,11 @@ else {
         <div id="nowPlayingBar">
 
             <div id="nowPlayingLeft">
+                <div class="content">
+                    <span class="albumLink">
+                        <img class="albumArtwork" src="https://s.mxmcdn.net/site/images/album-placeholder.png" alt="album">
+                    </span>
+                </div>
             </div>
 
             <div id="nowPlayingCenter">
