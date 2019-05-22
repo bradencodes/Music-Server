@@ -181,7 +181,6 @@
             });
 
             audioElement.setTrack(track);
-            playSong();
         });
 
         if(play) {
