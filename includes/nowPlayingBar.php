@@ -28,6 +28,18 @@
         }
     }
 
+    function playSong() {
+        $(".controlButton.play").hide();
+        $(".controlButton.pause").show();
+        audioElement.play();
+    }
+
+    function pauseSong() {
+        $(".controlButton.play").show();
+        $(".controlButton.pause").hide();
+        audioElement.pause();
+    }
+
 </script>
 
 
@@ -70,11 +82,11 @@
                         <img src="assets/images/icons/previous.png" alt="previous">
                     </button>
 
-                    <button class="controlButton play" title="play">
+                    <button class="controlButton play" title="play" onClick="playSong()">
                         <img src="assets/images/icons/play.png" alt="play">
                     </button>
 
-                    <button class="controlButton pause" title="pause" style="display: none">
+                    <button class="controlButton pause" title="pause" style="display: none" onClick="pauseSong()">
                         <img src="assets/images/icons/pause.png" alt="pause">
                     </button>
 
