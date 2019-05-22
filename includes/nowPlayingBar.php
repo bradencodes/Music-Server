@@ -181,11 +181,11 @@
             });
 
             audioElement.setTrack(track);
-        });
 
-        if(play) {
-            audioElement.play();
-        }
+            if(play) {
+                playSong();
+            }
+        });
     }
 
     function playSong() {
