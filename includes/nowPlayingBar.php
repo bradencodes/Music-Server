@@ -122,9 +122,34 @@
         shuffle = !shuffle;
         var imageName = shuffle ? "shuffle-active.png" : "shuffle.png";
         $(".controlButton.shuffle img").attr("src", "assets/images/icons/" + imageName);
+
+        if(shuffle == true) {
+            //Randomize playlist
+            shuffleArray(shufflePlaylist);
+        }
+        else {
+            //Go back to regular playlist
+        }
+    }
+
+    function shuffleArray(a) {
+        var j, x, i;
+        for (i = a.length - 1; i > 0; i--) {
+            j = Math.floor(Math.random() * (i + 1));
+            x = a[i];
+            a[i] = a[j];
+            a[j] = x;
+        }
+        return a;
     }
 
     function setTrack(trackId, newPlaylist, play) {
+
+        if(newPlaylist != currentPlaylist) {
+            currentPlaylist = newPlaylist;
+            shufflePlaylist = currentPlaylist.slice();
+            shuffleArray(shuflePlaylist);
+        }
 
         currentIndex = currentPlaylist.indexOf(trackId);
         pauseSong();
