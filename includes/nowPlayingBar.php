@@ -21,7 +21,10 @@
     });
 
     function setTrack(trackId, newPlaylist, play) {
-        audioElement.setTrack("assets/music/bensound-acousticbreeze.mp3");
+        
+        $.post("includes/handlers/ajax/getSongJson.php", { songId: trackId }, function(data) {
+            console.log(data);
+        });
 
         if(play) {
             audioElement.play();
