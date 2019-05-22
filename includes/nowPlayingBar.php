@@ -34,6 +34,12 @@
                 $(".artistName span").text(artist.name);
             });
 
+            $.post("includes/handlers/ajax/getAlbumJson.php", { albumId: track.album }, function(data) {
+                var album = JSON.parse(data);
+
+                $(".albumLink img").attr("src", album.artworkPath);
+            });
+
             audioElement.setTrack(track.path);
             audioElement.play();
         });
@@ -65,7 +71,7 @@
             <div class="content">
 
                 <span class="albumLink">
-                    <img class="albumArtwork" src="https://s.mxmcdn.net/site/images/album-placeholder.png" alt="album">
+                    <img class="albumArtwork" alt="album">
                 </span>
 
                 <div class="trackInfo">
