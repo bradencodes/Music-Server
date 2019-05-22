@@ -118,6 +118,12 @@
         $(".controlButton.volume img").attr("src", "assets/images/icons/" + imageName);
     }
 
+    function setShuffle() {
+        shuffle = !shuffle;
+        var imageName = shuffle ? "shuffle-active.png" : "shuffle.png";
+        $(".controlButton.shuffle img").attr("src", "assets/images/icons/" + imageName);
+    }
+
     function setTrack(trackId, newPlaylist, play) {
 
         currentIndex = currentPlaylist.indexOf(trackId);
@@ -201,7 +207,7 @@
 
                 <div class="buttons">
 
-                    <button class="controlButton shuffle" title="shuffle">
+                    <button class="controlButton shuffle" title="shuffle" onclick="setShuffle()">
                         <img src="assets/images/icons/shuffle.png" alt="shuffle">
                     </button>
 
