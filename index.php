@@ -1,4 +1,4 @@
-<?php include("includes/header.php") ?>
+<?php include("includes/header.php"); ?>
 
 <h1 class="pageHeadingBig">You Might Also Like</h1>
 
@@ -11,11 +11,15 @@
 
             echo    "<div class='gridViewItem'>
 
-                        <img src='" . $row['artworkPath'] . "'>
+                        <a href='album.php?id=" . $row['id'] . "'>
 
-                        <div class='gridViewInfo'>
-                            " . $row['title'] . "
-                        </div>
+                            <img src='" . $row['artworkPath'] . "'>
+
+                            <div class='gridViewInfo'>
+                                " . $row['title'] . "
+                            </div>
+                        
+                        </a>
 
                     </div>";
         }
@@ -23,4 +27,4 @@
 
 </div>
 
-<?php include("includes/footer.php") ?>
+<?php include("includes/footer.php"); ?>
