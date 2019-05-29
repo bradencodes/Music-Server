@@ -10,7 +10,7 @@
 
         <div class="buttonItems">
 
-            <button class="button green" onclick="createPlaylist('hey')">NEW PLAYLIST</button>
+            <button class="button green" onclick="createPlaylist()">NEW PLAYLIST</button>
 
         </div>
 

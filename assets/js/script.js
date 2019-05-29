@@ -26,12 +26,17 @@ function openPage(url) {
 
 }
 
-function createPlaylist(username) {
-    var alert = prompt("Name your playlist");
+function createPlaylist() {
+    var popup = prompt("Name your playlist");
 
-    if(alert != null) {
-        $.post("includes/handlers/ajax/createPlaylist.php", { name: alert, username: username })
-        .done(function() {
+    if(popup != null) {
+        $.post("includes/handlers/ajax/createPlaylist.php", { name: popup, username: userLoggedIn })
+        .done(function(error) {
+            if(error != "") {
+                alert(error);
+                return;
+            }
+
             openPage("yourMusic.php");
         });
     }
